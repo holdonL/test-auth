@@ -1,0 +1,19 @@
+.button {
+    box-sizing: border-box;
+    min-width: 227px;
+    padding: 10px 66px;
+    font: inherit;
+    font-size: 16px;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 90px;
+    background-color: #fff;
+    // transition: ease-in-out 0.5s all;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: $primary-color;
+        color: #fff;
+    }
+}
