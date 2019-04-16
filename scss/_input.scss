@@ -6,4 +6,12 @@
     border: 1px solid $border-color;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+
+    &:focus {
+        border: 1px solid $primary-color;
+    }
+
+    &:focus+label {
+        display: block;
+    }
 }

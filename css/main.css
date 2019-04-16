@@ -37,6 +37,14 @@ body {
   border-top-right-radius: 4px;
 }
 
+.input:focus {
+  border: 1px solid #237BEF;
+}
+
+.input:focus + label {
+  display: block;
+}
+
 .auth-form {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -69,10 +77,25 @@ body {
   margin-bottom: 30px;
 }
 
+.auth-form__label {
+  display: none;
+  position: absolute;
+  padding: 0 4px;
+  left: 10px;
+  top: -7px;
+  background-color: #fff;
+  color: #237BEF;
+  font-size: 10px;
+}
+
 .auth-form__button {
   display: block;
   margin: 0 auto;
   margin-bottom: 24px;
+}
+
+.auth-form__input-wrapper {
+  position: relative;
 }
 
 .auth-form__password {
@@ -189,12 +212,13 @@ body {
   cursor: pointer;
 }
 
-.button:hover, .button:focus {
-  background-color: #237BEF;
-  color: #fff;
+.button:focus {
+  -webkit-box-shadow: 0 0 3px #237BEF;
+          box-shadow: 0 0 3px #237BEF;
 }
 
 .link {
+  padding: 5px;
   text-decoration: none;
   color: #237BEF;
 }
