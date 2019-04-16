@@ -15,3 +15,26 @@
         display: block;
     }
 }
+
+.input--error {
+    border: 1px solid $error-color;
+
+    &+label {
+        display: block;
+        color: $error-color;
+    }
+
+    &:focus {
+        border: 1px solid $error-color;
+    }
+}
+
+.input--preloading {
+    border: 1px solid $preloading-color;
+
+    &:focus+label {
+        display: block;
+        color: $preloading-color;
+    }
+
+}

@@ -45,6 +45,28 @@ body {
   display: block;
 }
 
+.input--error {
+  border: 1px solid #EB5757;
+}
+
+.input--error + label {
+  display: block;
+  color: #EB5757;
+}
+
+.input--error:focus {
+  border: 1px solid #EB5757;
+}
+
+.input--preloading {
+  border: 1px solid rgba(35, 123, 239, 0.5);
+}
+
+.input--preloading:focus + label {
+  display: block;
+  color: rgba(35, 123, 239, 0.5);
+}
+
 .auth-form {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -202,6 +224,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-width: 227px;
+  min-height: 45px;
   padding: 10px 66px;
   font: inherit;
   font-size: 16px;
@@ -215,6 +238,23 @@ body {
 .button:focus {
   -webkit-box-shadow: 0 0 3px #237BEF;
           box-shadow: 0 0 3px #237BEF;
+}
+
+.button--error {
+  background-color: #EB5757;
+  color: #fff;
+  font-size: 16px;
+  border: 0;
+  background-image: none;
+}
+
+.button--preloading {
+  background-color: rgba(35, 123, 239, 0.5);
+  background-image: url(../img/circle.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+  font-size: 0;
 }
 
 .link {

@@ -1,6 +1,7 @@
 .button {
     box-sizing: border-box;
     min-width: 227px;
+    min-height: 45px;
     padding: 10px 66px;
     font: inherit;
     font-size: 16px;
@@ -15,4 +16,21 @@
         box-shadow: 0 0 3px $primary-color;
 
     }
+}
+
+.button--error {
+    background-color: $error-color;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    background-image: none;
+}
+
+.button--preloading {
+    background-color: $preloading-color;
+    background-image: url(../img/circle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+    font-size: 0;
 }
