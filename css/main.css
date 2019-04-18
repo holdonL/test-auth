@@ -228,17 +228,6 @@ body {
   padding-right: 40px;
 }
 
-.password__label {
-  display: none;
-  position: absolute;
-  padding: 0 4px;
-  left: 10px;
-  top: -7px;
-  background-color: #fff;
-  color: #237BEF;
-  font-size: 10px;
-}
-
 .button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
