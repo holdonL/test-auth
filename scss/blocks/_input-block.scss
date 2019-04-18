@@ -1,0 +1,81 @@
+.input-block {
+    display: flex;
+    position: relative;
+    max-width: 330px;
+}
+
+.input-block__label {
+    display: block;
+    position: absolute;
+    padding: 0 4px;
+    left: 8px;
+    top: 12px;
+    background-color: #fff;
+    color: #A0A0A0;
+    transition: ease-in-out all 0.3s;
+}
+
+.input-block__input {
+    box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 330px;
+    padding: 11px 11px;
+    border: 1px solid $border-color;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
+    &:focus {
+        border: 1px solid $primary-color;
+    }
+
+    &:focus+.input-block__label {
+        color: $primary-color;
+        font-size: 10px;
+        transform: translateY(-17px);
+    }
+}
+
+.input-block__toggle {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    cursor: pointer;
+    width: 23px;
+    height: 13px;
+    background-image: url(../img/eye.svg), url(../img/line.svg);
+    background-position: center, center;
+    background-size: 23px 13px, 19px 19px;
+    background-repeat: no-repeat, no-repeat;
+    border: 0;
+    background-color: transparent;
+
+}
+
+.input-block--password {
+
+    input {
+        padding-right: 40px;
+    }
+}
+
+.input-block--error {
+
+    .input-block__input {
+
+        border: 1px solid $error-color;
+
+        &:focus {
+            border: 1px solid $error-color;
+        }
+    }
+}
+
+.input-block--preloading {
+
+    .input-block__input {
+
+        border: 1px solid $preloading-color;
+    }
+
+}

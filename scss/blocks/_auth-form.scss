@@ -31,29 +31,10 @@
     margin-bottom: 30px;
 }
 
-.auth-form__label {
-    display: none;
-    position: absolute;
-    padding: 0 4px;
-    left: 10px;
-    top: -7px;
-    background-color: #fff;
-    color: $primary-color;
-    font-size: 10px;
-}
-
 .auth-form__button {
     display: block;
     margin: 0 auto;
     margin-bottom: 24px;
-}
-
-.auth-form__input-wrapper {
-    position: relative;
-}
-
-.auth-form__password {
-    margin-bottom: 30px;
 }
 
 .auth-form__linkwrapper {

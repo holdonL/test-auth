@@ -16,14 +16,14 @@
     <div class="overlay"></div>
     <form class="auth-form" action="#" method="POST">
         <h2 class="auth-form__heading">Log in</h2>
-        <div class="auth-form__input-wrapper">
-            <input class="auth-form__input input" type="text" name="login" id="user-login" placeholder="Email">
-            <label class="auth-form__label" for="user-login">Email</label>
+        <div class="auth-form__input input-block">
+            <input class="input-block__input input" type="text" name="login" id="user-login">
+            <label class="input-block__label" for="user-login">Email</label>
         </div>
-        <div class="auth-form__password auth-form__input-wrapper password">
-            <input class="password__input input" type="password" name="password" id="user-password" placeholder="Password">
-            <label class="auth-form__label" for="user-password">Password</label>
-            <button class="password__toggle" type="button"></button>
+        <div class="auth-form__input input-block input-block--password">
+            <input class="input-block__input input" type="password" name="password" id="user-password">
+            <label class="input-block__label" for="user-password">Password</label>
+            <button class="input-block__toggle" type="button"></button>
         </div>
         <button class="auth-form__button button" type="submit">Authorise me</button>
         <div class="auth-form__linkwrapper">
