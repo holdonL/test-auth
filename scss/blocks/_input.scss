@@ -1,5 +1,6 @@
 .input {
     box-sizing: border-box;
+    outline: none;
     display: block;
     width: 330px;
     padding: 11px 11px;
@@ -11,6 +12,10 @@
         border: 1px solid $primary-color;
     }
 
+    &:focus::placeholder {
+        font-size: 0;
+    }
+
     &:focus+label {
         display: block;
     }
@@ -19,11 +24,6 @@
 .input--error {
     border: 1px solid $error-color;
 
-    &+label {
-        display: block;
-        color: $error-color;
-    }
-
     &:focus {
         border: 1px solid $error-color;
     }
@@ -31,10 +31,5 @@
 
 .input--preloading {
     border: 1px solid $preloading-color;
-
-    &:focus+label {
-        display: block;
-        color: $preloading-color;
-    }
 
 }
